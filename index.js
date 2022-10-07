@@ -59,7 +59,7 @@ app.post("/clear", (req, res) => {
 
 app.get("/", (req, res) => {
   const data = require(`${PATH}/project-1.json`);
-  res.json(data);
+  res.json(data.assignments);
 });
 
 app.listen(port, () => {
