@@ -49,12 +49,19 @@ app.post("/clear", (req, res) => {
 
   const templateData = require(`${PATH}/template.json`);
 
-  fs.writeFileSync(`${PATH}/${project}`, JSON.stringify(templateData, null, 2));
+  try {
+    fs.writeFileSync(
+      `${PATH}/${project}`,
+      JSON.stringify(templateData, null, 2)
+    );
 
-  res.json({
-    success: true,
-    requestId: reqId++,
-  });
+    res.json({
+      success: true,
+      requestId: reqId++,
+    });
+  } catch (e) {
+    res.send(JSON.stringify(e));
+  }
 });
 
 app.get("/", (req, res) => {
