@@ -58,14 +58,8 @@ app.post("/clear", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  fs.writeFileSync(
-    `${PATH}/test.json`,
-    JSON.stringify({ yay: "woo" }, null, 2)
-  );
-
-  const projectData = require(`${PATH}/test.json`);
-
-  res.json(projectData);
+  const data = require(`${PATH}/project-1.json`);
+  res.json(data);
 });
 
 app.listen(port, () => {

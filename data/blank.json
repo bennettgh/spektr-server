@@ -1,0 +1,61 @@
+{
+  "success": true,
+  "project": {
+    "calendar": "general",
+    "hoursPerDay": 24,
+    "daysPerWeek": 5,
+    "daysPerMonth": 20
+  },
+  "calendars": {
+    "rows": [
+      {
+        "id": "general",
+        "name": "General",
+        "intervals": [
+          {
+            "recurrentStartDate": "every weekday at 14:30",
+            "recurrentEndDate": "every weekday at 00:00",
+            "isWorking": false
+          }
+        ],
+        "expanded": true
+      },
+      {
+        "id": "am-shift",
+        "name": "AM Shift",
+        "intervals": [
+          {
+            "recurrentStartDate": "every weekday at 7:30",
+            "recurrentEndDate": "every weekday at 00:00",
+            "isWorking": false
+          }
+        ],
+        "expanded": true
+      },
+      {
+        "id": "pm-shift",
+        "name": "PM Shift",
+        "intervals": [
+          {
+            "recurrentStartDate": "every weekday at 14:30",
+            "recurrentEndDate": "every weekday at 7:30",
+            "isWorking": false
+          }
+        ],
+        "expanded": true
+      }
+    ]
+  },
+  "tasks": {
+    "rows": []
+  },
+  "resources": {
+    "rows": []
+  },
+  "assignments": {
+    "rows": []
+  },
+  "dependencies": {
+    "rows": []
+  }
+}
