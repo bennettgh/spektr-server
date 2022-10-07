@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 app.use(bodyParser.json());
 app.use(cors({ credentials: true, origin: "*" }));
 
-const PATH = `${__dirname}/../public/data/writeable`;
+const PATH = `${__dirname}/data/`;
 
 let reqId = 1;
 
@@ -58,7 +58,9 @@ app.post("/clear", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("Helo world");
+  const projectData = require(`${PATH}/test.json`);
+
+  res.json(projectData);
 });
 
 app.listen(port, () => {
