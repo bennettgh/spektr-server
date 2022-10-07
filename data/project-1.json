@@ -52,8 +52,8 @@
         "id": 1000,
         "parentIndex": 0,
         "startDate": "2022-10-04T00:00:00-04:00",
-        "endDate": "2022-10-04T00:00:00-04:00",
-        "duration": 0,
+        "endDate": "2022-10-04T02:00:00-04:00",
+        "duration": 0.08333333333333333,
         "durationUnit": "day",
         "cls": "",
         "name": "21-04-039 60 1st Street, MILL FINISH, Ph 2",
@@ -62,7 +62,7 @@
         "manuallyScheduled": false,
         "constraintType": null,
         "constraintDate": null,
-        "percentDone": null,
+        "percentDone": 0,
         "inactive": false,
         "effort": 2,
         "effortUnit": "hour",
@@ -79,8 +79,8 @@
             "id": 1100,
             "parentIndex": 0,
             "startDate": "2022-10-04T00:00:00-04:00",
-            "endDate": null,
-            "duration": null,
+            "endDate": "2022-10-04T02:00:00-04:00",
+            "duration": 0.08333333333333333,
             "durationUnit": "day",
             "cls": "",
             "name": "21-04-039 60 1st Street, MILL FINISH, Ph 2",
@@ -223,8 +223,8 @@
         "id": 4000,
         "parentIndex": 3,
         "startDate": "2022-10-04T00:00:00-04:00",
-        "endDate": "2022-10-04T01:00:00-04:00",
-        "duration": 0.041666666666666664,
+        "endDate": "2022-10-04T00:00:00-04:00",
+        "duration": 0,
         "durationUnit": "day",
         "cls": "",
         "name": "20-12-023 UH Ahuja - Sports Medicine Building, BEACHSTONE GREY METALLIC - 24384, Ph 1.1",
@@ -233,7 +233,7 @@
         "manuallyScheduled": false,
         "constraintType": null,
         "constraintDate": null,
-        "percentDone": 0,
+        "percentDone": null,
         "inactive": false,
         "effort": 1,
         "effortUnit": "hour",
@@ -250,8 +250,8 @@
             "id": 4100,
             "parentIndex": 0,
             "startDate": "2022-10-04T00:00:00-04:00",
-            "endDate": "2022-10-04T01:00:00-04:00",
-            "duration": 0.041666666666666664,
+            "endDate": null,
+            "duration": null,
             "durationUnit": "day",
             "cls": "",
             "name": "20-12-023 UH Ahuja - Sports Medicine Building, BEACHSTONE GREY METALLIC - 24384, Ph 1.1",
@@ -641,8 +641,6 @@
         "expanded": true,
         "baselines": [],
         "parentId": null,
-        "pu": 2,
-        "taskqty": 63,
         "completionDate": "2022-10-09T00:00:00-04:00",
         "children": [
           {
@@ -698,8 +696,6 @@
         "expanded": true,
         "baselines": [],
         "parentId": null,
-        "pu": 1,
-        "taskqty": 3,
         "completionDate": "2022-10-11T00:00:00-04:00",
         "children": [
           {
@@ -3802,12 +3798,12 @@
   "assignments": {
     "rows": [
       {
-        "id": "_generatedc255",
-        "event": 4100,
-        "resource": 8,
+        "id": "_generatedc253",
+        "event": 1100,
+        "resource": 1,
         "units": 100,
-        "resourceId": 8,
-        "eventId": 4100
+        "resourceId": 1,
+        "eventId": 1100
       }
     ]
   },
