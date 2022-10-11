@@ -54,8 +54,8 @@ app.post("/clear/:projectId", (req, res) => {
 app.get("/project/:projectId", (req, res) => {
   const { projectId } = req.params;
   console.log(projectId);
-  const data = require(`${DATA_DIR_PATH}/project-${projectId}.json`);
-  res.json(data);
+  const data = fs.readFileSync(`${DATA_DIR_PATH}/project-${projectId}.json`);
+  res.json(JSON.parse(data));
 });
 
 app.listen(port, () => {

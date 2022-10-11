@@ -49,22 +49,22 @@
       "id": 1000,
       "parentIndex": 0,
       "startDate": "2022-10-04T00:00:00-04:00",
-      "endDate": null,
-      "duration": null,
+      "endDate": "2022-10-04T00:00:00-04:00",
+      "duration": 0,
       "durationUnit": "day",
       "cls": "",
       "name": "21-04-039 60 1st Street, MILL FINISH, Ph 2",
       "calendar": null,
       "direction": "Forward",
-      "manuallyScheduled": true,
+      "manuallyScheduled": false,
       "constraintType": null,
       "constraintDate": null,
-      "percentDone": 0,
+      "percentDone": null,
       "inactive": false,
       "effort": 2,
       "effortUnit": "hour",
       "effortDriven": false,
-      "schedulingMode": "FixedEffort",
+      "schedulingMode": "Normal",
       "expanded": true,
       "baselines": [],
       "parentId": null,
@@ -76,8 +76,8 @@
           "id": 1100,
           "parentIndex": 0,
           "startDate": "2022-10-04T00:00:00-04:00",
-          "endDate": "2022-10-04T02:00:00-04:00",
-          "duration": 0.08333333333333333,
+          "endDate": null,
+          "duration": null,
           "durationUnit": "day",
           "cls": "",
           "name": "21-04-039 60 1st Street, MILL FINISH, Ph 2",
@@ -94,9 +94,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 1000,
+          "taskType": "FAB",
           "pu": 1,
           "taskqty": 4,
-          "completionDate": "2022-10-03T00:00:00-04:00"
+          "completionDate": "2022-10-03T00:00:00-04:00",
+          "puEffort": 4
         }
       ]
     },
@@ -149,32 +151,34 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 2000,
+          "taskType": "FAB",
           "pu": 1.5,
           "taskqty": 1,
-          "completionDate": "2022-10-04T00:00:00-04:00"
+          "completionDate": "2022-10-04T00:00:00-04:00",
+          "puEffort": 1.5
         }
       ]
     },
     {
       "id": 3000,
       "parentIndex": 2,
-      "startDate": "2022-10-06T00:00:00-04:00",
-      "endDate": "2022-10-06T00:00:00-04:00",
-      "duration": 0,
+      "startDate": "2022-10-04T00:00:00-04:00",
+      "endDate": "2022-10-04T16:00:00-04:00",
+      "duration": 0.6666666666666666,
       "durationUnit": "day",
       "cls": "",
       "name": "21-05-023 IU Ferguson International Center, MILL FINISH, Ph 1",
       "calendar": null,
       "direction": "Forward",
       "manuallyScheduled": false,
-      "constraintType": "startnoearlierthan",
-      "constraintDate": "2022-10-06T00:00:00-04:00",
-      "percentDone": null,
+      "constraintType": null,
+      "constraintDate": null,
+      "percentDone": 0,
       "inactive": false,
       "effort": 16,
       "effortUnit": "hour",
       "effortDriven": false,
-      "schedulingMode": "FixedEffort",
+      "schedulingMode": "Normal",
       "expanded": true,
       "baselines": [],
       "parentId": null,
@@ -185,9 +189,9 @@
         {
           "id": 3100,
           "parentIndex": 0,
-          "startDate": "2022-10-06T00:00:00-04:00",
-          "endDate": null,
-          "duration": null,
+          "startDate": "2022-10-04T00:00:00-04:00",
+          "endDate": "2022-10-04T16:00:00-04:00",
+          "duration": 0.6666666666666666,
           "durationUnit": "day",
           "cls": "",
           "name": "21-05-023 IU Ferguson International Center, MILL FINISH, Ph 1",
@@ -204,25 +208,27 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 3000,
+          "taskType": "FAB",
           "pu": 0.5,
           "taskqty": 64,
-          "completionDate": "2022-10-04T00:00:00-04:00"
+          "completionDate": "2022-10-04T00:00:00-04:00",
+          "puEffort": 32
         }
       ]
     },
     {
       "id": 4000,
       "parentIndex": 3,
-      "startDate": null,
-      "endDate": null,
-      "duration": null,
+      "startDate": "2022-10-04T00:00:00-04:00",
+      "endDate": "2022-10-04T00:00:00-04:00",
+      "duration": 0,
       "durationUnit": "day",
       "cls": "",
       "name": "20-12-023 UH Ahuja - Sports Medicine Building, BEACHSTONE GREY METALLIC - 24384, Ph 1.1",
       "calendar": null,
       "direction": "Forward",
       "manuallyScheduled": false,
-      "constraintType": "startnoearlierthan",
+      "constraintType": null,
       "constraintDate": null,
       "percentDone": null,
       "inactive": false,
@@ -240,7 +246,7 @@
         {
           "id": 4100,
           "parentIndex": 0,
-          "startDate": null,
+          "startDate": "2022-10-04T00:00:00-04:00",
           "endDate": null,
           "duration": null,
           "durationUnit": "day",
@@ -259,9 +265,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 4000,
+          "taskType": "FAB",
           "pu": 2,
           "taskqty": 1,
-          "completionDate": "2022-10-04T00:00:00-04:00"
+          "completionDate": "2022-10-04T00:00:00-04:00",
+          "puEffort": 2
         }
       ]
     },
@@ -314,9 +322,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 5000,
+          "taskType": "FAB",
           "pu": 3.5,
           "taskqty": 1,
-          "completionDate": "2022-10-04T00:00:00-04:00"
+          "completionDate": "2022-10-04T00:00:00-04:00",
+          "puEffort": 3.5
         }
       ]
     },
@@ -369,9 +379,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 6000,
+          "taskType": "FAB",
           "pu": 2.2,
           "taskqty": 5,
-          "completionDate": "2022-10-05T00:00:00-04:00"
+          "completionDate": "2022-10-05T00:00:00-04:00",
+          "puEffort": 11
         }
       ]
     },
@@ -424,9 +436,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 7000,
+          "taskType": "FAB",
           "pu": 1.7,
           "taskqty": 64,
-          "completionDate": "2022-10-05T00:00:00-04:00"
+          "completionDate": "2022-10-05T00:00:00-04:00",
+          "puEffort": 108.8
         }
       ]
     },
@@ -479,9 +493,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 8000,
+          "taskType": "FAB",
           "pu": 2.5,
           "taskqty": 3,
-          "completionDate": "2022-10-05T00:00:00-04:00"
+          "completionDate": "2022-10-05T00:00:00-04:00",
+          "puEffort": 7.5
         }
       ]
     },
@@ -534,9 +550,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 9000,
+          "taskType": "FAB",
           "pu": 1.5,
           "taskqty": 10,
-          "completionDate": "2022-10-08T00:00:00-04:00"
+          "completionDate": "2022-10-08T00:00:00-04:00",
+          "puEffort": 15
         }
       ]
     },
@@ -563,8 +581,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 2,
-      "taskqty": 85,
       "completionDate": "2022-10-09T00:00:00-04:00",
       "children": [
         {
@@ -589,9 +605,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 10000,
+          "taskType": "FAB",
           "pu": 2,
           "taskqty": 85,
-          "completionDate": "2022-10-09T00:00:00-04:00"
+          "completionDate": "2022-10-09T00:00:00-04:00",
+          "puEffort": 170
         }
       ]
     },
@@ -618,8 +636,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 2,
-      "taskqty": 63,
       "completionDate": "2022-10-09T00:00:00-04:00",
       "children": [
         {
@@ -644,9 +660,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 11000,
+          "taskType": "FAB",
           "pu": 2.2,
           "taskqty": 63,
-          "completionDate": "2022-10-09T00:00:00-04:00"
+          "completionDate": "2022-10-09T00:00:00-04:00",
+          "puEffort": 138.6
         }
       ]
     },
@@ -673,8 +691,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 1,
-      "taskqty": 3,
       "completionDate": "2022-10-11T00:00:00-04:00",
       "children": [
         {
@@ -699,9 +715,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 12000,
+          "taskType": "FAB",
           "pu": 1.00592,
           "taskqty": 3,
-          "completionDate": "2022-10-11T00:00:00-04:00"
+          "completionDate": "2022-10-11T00:00:00-04:00",
+          "puEffort": 3.01776
         }
       ]
     },
@@ -728,8 +746,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 2,
-      "taskqty": 67,
       "completionDate": "2022-10-11T00:00:00-04:00",
       "children": [
         {
@@ -754,9 +770,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 13000,
+          "taskType": "FAB",
           "pu": 2,
           "taskqty": 67,
-          "completionDate": "2022-10-11T00:00:00-04:00"
+          "completionDate": "2022-10-11T00:00:00-04:00",
+          "puEffort": 134
         }
       ]
     },
@@ -783,8 +801,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 2,
-      "taskqty": 87,
       "completionDate": "2022-10-11T00:00:00-04:00",
       "children": [
         {
@@ -809,9 +825,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 14000,
+          "taskType": "FAB",
           "pu": 2,
           "taskqty": 87,
-          "completionDate": "2022-10-11T00:00:00-04:00"
+          "completionDate": "2022-10-11T00:00:00-04:00",
+          "puEffort": 174
         }
       ]
     },
@@ -838,8 +856,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 2,
-      "taskqty": 56,
       "completionDate": "2022-10-11T00:00:00-04:00",
       "children": [
         {
@@ -864,9 +880,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 15000,
+          "taskType": "FAB",
           "pu": 2,
           "taskqty": 56,
-          "completionDate": "2022-10-11T00:00:00-04:00"
+          "completionDate": "2022-10-11T00:00:00-04:00",
+          "puEffort": 112
         }
       ]
     },
@@ -893,8 +911,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 2,
-      "taskqty": 25,
       "completionDate": "2022-10-11T00:00:00-04:00",
       "children": [
         {
@@ -919,9 +935,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 16000,
+          "taskType": "FAB",
           "pu": 2,
           "taskqty": 25,
-          "completionDate": "2022-10-11T00:00:00-04:00"
+          "completionDate": "2022-10-11T00:00:00-04:00",
+          "puEffort": 50
         }
       ]
     },
@@ -948,8 +966,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 1,
-      "taskqty": 134,
       "completionDate": "2022-10-11T00:00:00-04:00",
       "children": [
         {
@@ -974,9 +990,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 17000,
+          "taskType": "FAB",
           "pu": 1.7,
           "taskqty": 134,
-          "completionDate": "2022-10-11T00:00:00-04:00"
+          "completionDate": "2022-10-11T00:00:00-04:00",
+          "puEffort": 227.8
         }
       ]
     },
@@ -1003,8 +1021,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 2,
-      "taskqty": 60,
       "completionDate": "2022-10-11T00:00:00-04:00",
       "children": [
         {
@@ -1029,9 +1045,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 18000,
+          "taskType": "FAB",
           "pu": 2.2,
           "taskqty": 60,
-          "completionDate": "2022-10-11T00:00:00-04:00"
+          "completionDate": "2022-10-11T00:00:00-04:00",
+          "puEffort": 132
         }
       ]
     },
@@ -1058,8 +1076,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 10,
-      "taskqty": 17,
       "completionDate": "2022-10-11T00:00:00-04:00",
       "children": [
         {
@@ -1084,9 +1100,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 19000,
+          "taskType": "FAB",
           "pu": 10,
           "taskqty": 17,
-          "completionDate": "2022-10-11T00:00:00-04:00"
+          "completionDate": "2022-10-11T00:00:00-04:00",
+          "puEffort": 170
         }
       ]
     },
@@ -1113,8 +1131,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 15,
-      "taskqty": 5,
       "completionDate": "2022-10-11T00:00:00-04:00",
       "children": [
         {
@@ -1139,9 +1155,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 20000,
+          "taskType": "FAB",
           "pu": 15,
           "taskqty": 5,
-          "completionDate": "2022-10-11T00:00:00-04:00"
+          "completionDate": "2022-10-11T00:00:00-04:00",
+          "puEffort": 75
         }
       ]
     },
@@ -1168,8 +1186,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 2,
-      "taskqty": 2,
       "completionDate": "2022-10-11T00:00:00-04:00",
       "children": [
         {
@@ -1194,9 +1210,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 21000,
+          "taskType": "FAB",
           "pu": 2,
           "taskqty": 2,
-          "completionDate": "2022-10-11T00:00:00-04:00"
+          "completionDate": "2022-10-11T00:00:00-04:00",
+          "puEffort": 4
         }
       ]
     },
@@ -1223,8 +1241,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 18,
-      "taskqty": 9,
       "completionDate": "2022-10-11T00:00:00-04:00",
       "children": [
         {
@@ -1249,9 +1265,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 22000,
+          "taskType": "FAB",
           "pu": 18,
           "taskqty": 9,
-          "completionDate": "2022-10-11T00:00:00-04:00"
+          "completionDate": "2022-10-11T00:00:00-04:00",
+          "puEffort": 162
         }
       ]
     },
@@ -1278,8 +1296,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 2,
-      "taskqty": 3,
       "completionDate": "2022-10-11T00:00:00-04:00",
       "children": [
         {
@@ -1304,9 +1320,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 23000,
+          "taskType": "FAB",
           "pu": 2,
           "taskqty": 3,
-          "completionDate": "2022-10-11T00:00:00-04:00"
+          "completionDate": "2022-10-11T00:00:00-04:00",
+          "puEffort": 6
         }
       ]
     },
@@ -1333,8 +1351,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 10,
-      "taskqty": 6,
       "completionDate": "2022-10-11T00:00:00-04:00",
       "children": [
         {
@@ -1359,9 +1375,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 24000,
+          "taskType": "FAB",
           "pu": 10,
           "taskqty": 6,
-          "completionDate": "2022-10-11T00:00:00-04:00"
+          "completionDate": "2022-10-11T00:00:00-04:00",
+          "puEffort": 60
         }
       ]
     },
@@ -1388,8 +1406,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 2,
-      "taskqty": 6,
       "completionDate": "2022-10-12T00:00:00-04:00",
       "children": [
         {
@@ -1414,9 +1430,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 25000,
+          "taskType": "FAB",
           "pu": 2.2,
           "taskqty": 6,
-          "completionDate": "2022-10-12T00:00:00-04:00"
+          "completionDate": "2022-10-12T00:00:00-04:00",
+          "puEffort": 13.2
         }
       ]
     },
@@ -1443,8 +1461,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 0,
-      "taskqty": 17,
       "completionDate": "2022-10-12T00:00:00-04:00",
       "children": [
         {
@@ -1469,9 +1485,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 26000,
+          "taskType": "FAB",
           "pu": 0.3,
           "taskqty": 17,
-          "completionDate": "2022-10-12T00:00:00-04:00"
+          "completionDate": "2022-10-12T00:00:00-04:00",
+          "puEffort": 5.1
         }
       ]
     },
@@ -1498,8 +1516,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 1,
-      "taskqty": 61,
       "completionDate": "2022-10-12T00:00:00-04:00",
       "children": [
         {
@@ -1524,9 +1540,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 27000,
+          "taskType": "FAB",
           "pu": 1.7,
           "taskqty": 61,
-          "completionDate": "2022-10-12T00:00:00-04:00"
+          "completionDate": "2022-10-12T00:00:00-04:00",
+          "puEffort": 103.7
         }
       ]
     },
@@ -1553,8 +1571,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 4,
-      "taskqty": 9,
       "completionDate": "2022-10-18T00:00:00-04:00",
       "children": [
         {
@@ -1579,9 +1595,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 28000,
+          "taskType": "FAB",
           "pu": 4,
           "taskqty": 9,
-          "completionDate": "2022-10-18T00:00:00-04:00"
+          "completionDate": "2022-10-18T00:00:00-04:00",
+          "puEffort": 36
         }
       ]
     },
@@ -1608,8 +1626,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 4,
-      "taskqty": 8,
       "completionDate": "2022-10-18T00:00:00-04:00",
       "children": [
         {
@@ -1634,9 +1650,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 29000,
+          "taskType": "FAB",
           "pu": 4,
           "taskqty": 8,
-          "completionDate": "2022-10-18T00:00:00-04:00"
+          "completionDate": "2022-10-18T00:00:00-04:00",
+          "puEffort": 32
         }
       ]
     },
@@ -1663,8 +1681,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 3,
-      "taskqty": 2,
       "completionDate": "2022-10-18T00:00:00-04:00",
       "children": [
         {
@@ -1689,9 +1705,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 30000,
+          "taskType": "FAB",
           "pu": 3,
           "taskqty": 2,
-          "completionDate": "2022-10-18T00:00:00-04:00"
+          "completionDate": "2022-10-18T00:00:00-04:00",
+          "puEffort": 6
         }
       ]
     },
@@ -1718,8 +1736,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 4,
-      "taskqty": 6,
       "completionDate": "2022-10-18T00:00:00-04:00",
       "children": [
         {
@@ -1744,9 +1760,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 31000,
+          "taskType": "FAB",
           "pu": 4,
           "taskqty": 6,
-          "completionDate": "2022-10-18T00:00:00-04:00"
+          "completionDate": "2022-10-18T00:00:00-04:00",
+          "puEffort": 24
         }
       ]
     },
@@ -1773,8 +1791,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 3,
-      "taskqty": 8,
       "completionDate": "2022-10-18T00:00:00-04:00",
       "children": [
         {
@@ -1799,9 +1815,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 32000,
+          "taskType": "FAB",
           "pu": 3,
           "taskqty": 8,
-          "completionDate": "2022-10-18T00:00:00-04:00"
+          "completionDate": "2022-10-18T00:00:00-04:00",
+          "puEffort": 24
         }
       ]
     },
@@ -1828,8 +1846,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 3,
-      "taskqty": 35,
       "completionDate": "2022-10-18T00:00:00-04:00",
       "children": [
         {
@@ -1854,9 +1870,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 33000,
+          "taskType": "FAB",
           "pu": 3,
           "taskqty": 35,
-          "completionDate": "2022-10-18T00:00:00-04:00"
+          "completionDate": "2022-10-18T00:00:00-04:00",
+          "puEffort": 105
         }
       ]
     },
@@ -1883,8 +1901,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 2,
-      "taskqty": 54,
       "completionDate": "2022-10-18T00:00:00-04:00",
       "children": [
         {
@@ -1909,9 +1925,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 34000,
+          "taskType": "FAB",
           "pu": 2,
           "taskqty": 54,
-          "completionDate": "2022-10-18T00:00:00-04:00"
+          "completionDate": "2022-10-18T00:00:00-04:00",
+          "puEffort": 108
         }
       ]
     },
@@ -1938,8 +1956,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 2,
-      "taskqty": 160,
       "completionDate": "2022-10-18T00:00:00-04:00",
       "children": [
         {
@@ -1964,9 +1980,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 35000,
+          "taskType": "FAB",
           "pu": 2,
           "taskqty": 160,
-          "completionDate": "2022-10-18T00:00:00-04:00"
+          "completionDate": "2022-10-18T00:00:00-04:00",
+          "puEffort": 320
         }
       ]
     },
@@ -1993,8 +2011,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 2,
-      "taskqty": 2,
       "completionDate": "2022-10-19T00:00:00-04:00",
       "children": [
         {
@@ -2019,9 +2035,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 36000,
+          "taskType": "FAB",
           "pu": 2,
           "taskqty": 2,
-          "completionDate": "2022-10-19T00:00:00-04:00"
+          "completionDate": "2022-10-19T00:00:00-04:00",
+          "puEffort": 4
         }
       ]
     },
@@ -2048,8 +2066,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 4,
-      "taskqty": 6,
       "completionDate": "2022-10-25T00:00:00-04:00",
       "children": [
         {
@@ -2074,9 +2090,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 37000,
+          "taskType": "FAB",
           "pu": 4,
           "taskqty": 6,
-          "completionDate": "2022-10-25T00:00:00-04:00"
+          "completionDate": "2022-10-25T00:00:00-04:00",
+          "puEffort": 24
         }
       ]
     },
@@ -2103,8 +2121,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 3,
-      "taskqty": 5,
       "completionDate": "2022-10-25T00:00:00-04:00",
       "children": [
         {
@@ -2129,9 +2145,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 38000,
+          "taskType": "FAB",
           "pu": 3,
           "taskqty": 5,
-          "completionDate": "2022-10-25T00:00:00-04:00"
+          "completionDate": "2022-10-25T00:00:00-04:00",
+          "puEffort": 15
         }
       ]
     },
@@ -2158,8 +2176,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 3,
-      "taskqty": 8,
       "completionDate": "2022-10-25T00:00:00-04:00",
       "children": [
         {
@@ -2184,9 +2200,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 39000,
+          "taskType": "FAB",
           "pu": 3,
           "taskqty": 8,
-          "completionDate": "2022-10-25T00:00:00-04:00"
+          "completionDate": "2022-10-25T00:00:00-04:00",
+          "puEffort": 24
         }
       ]
     },
@@ -2213,8 +2231,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 5,
-      "taskqty": 131,
       "completionDate": "2022-10-25T00:00:00-04:00",
       "children": [
         {
@@ -2239,9 +2255,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 40000,
+          "taskType": "FAB",
           "pu": 5.4,
           "taskqty": 131,
-          "completionDate": "2022-10-25T00:00:00-04:00"
+          "completionDate": "2022-10-25T00:00:00-04:00",
+          "puEffort": 707.4
         }
       ]
     },
@@ -2268,8 +2286,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 8,
-      "taskqty": 3,
       "completionDate": "2022-10-25T00:00:00-04:00",
       "children": [
         {
@@ -2294,9 +2310,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 41000,
+          "taskType": "FAB",
           "pu": 8,
           "taskqty": 3,
-          "completionDate": "2022-10-25T00:00:00-04:00"
+          "completionDate": "2022-10-25T00:00:00-04:00",
+          "puEffort": 24
         }
       ]
     },
@@ -2323,8 +2341,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 1,
-      "taskqty": 1,
       "completionDate": "2022-10-25T00:00:00-04:00",
       "children": [
         {
@@ -2349,9 +2365,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 42000,
+          "taskType": "FAB",
           "pu": 1.5,
           "taskqty": 1,
-          "completionDate": "2022-10-25T00:00:00-04:00"
+          "completionDate": "2022-10-25T00:00:00-04:00",
+          "puEffort": 1.5
         }
       ]
     },
@@ -2378,8 +2396,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 1,
-      "taskqty": 1,
       "completionDate": "2022-10-25T00:00:00-04:00",
       "children": [
         {
@@ -2404,9 +2420,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 43000,
+          "taskType": "FAB",
           "pu": 1.5,
           "taskqty": 1,
-          "completionDate": "2022-10-25T00:00:00-04:00"
+          "completionDate": "2022-10-25T00:00:00-04:00",
+          "puEffort": 1.5
         }
       ]
     },
@@ -2433,8 +2451,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 0,
-      "taskqty": 354,
       "completionDate": "2022-11-01T00:00:00-04:00",
       "children": [
         {
@@ -2459,9 +2475,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 44000,
+          "taskType": "FAB",
           "pu": 0.3,
           "taskqty": 354,
-          "completionDate": "2022-11-01T00:00:00-04:00"
+          "completionDate": "2022-11-01T00:00:00-04:00",
+          "puEffort": 106.2
         }
       ]
     },
@@ -2488,8 +2506,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 1,
-      "taskqty": 22,
       "completionDate": "2022-11-01T00:00:00-04:00",
       "children": [
         {
@@ -2514,9 +2530,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 45000,
+          "taskType": "FAB",
           "pu": 1.5,
           "taskqty": 22,
-          "completionDate": "2022-11-01T00:00:00-04:00"
+          "completionDate": "2022-11-01T00:00:00-04:00",
+          "puEffort": 33
         }
       ]
     },
@@ -2543,8 +2561,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 4,
-      "taskqty": 12,
       "completionDate": "2022-11-01T00:00:00-04:00",
       "children": [
         {
@@ -2569,9 +2585,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 46000,
+          "taskType": "FAB",
           "pu": 4,
           "taskqty": 12,
-          "completionDate": "2022-11-01T00:00:00-04:00"
+          "completionDate": "2022-11-01T00:00:00-04:00",
+          "puEffort": 48
         }
       ]
     },
@@ -2598,8 +2616,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 2,
-      "taskqty": 146,
       "completionDate": "2022-11-01T00:00:00-04:00",
       "children": [
         {
@@ -2624,9 +2640,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 47000,
+          "taskType": "FAB",
           "pu": 2.2,
           "taskqty": 146,
-          "completionDate": "2022-11-01T00:00:00-04:00"
+          "completionDate": "2022-11-01T00:00:00-04:00",
+          "puEffort": 321.2
         }
       ]
     },
@@ -2653,8 +2671,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 0,
-      "taskqty": 549,
       "completionDate": "2022-11-01T00:00:00-04:00",
       "children": [
         {
@@ -2679,9 +2695,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 48000,
+          "taskType": "FAB",
           "pu": 0.3,
           "taskqty": 549,
-          "completionDate": "2022-11-01T00:00:00-04:00"
+          "completionDate": "2022-11-01T00:00:00-04:00",
+          "puEffort": 164.7
         }
       ]
     },
@@ -2708,8 +2726,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 2,
-      "taskqty": 9,
       "completionDate": "2022-11-01T00:00:00-04:00",
       "children": [
         {
@@ -2734,9 +2750,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 49000,
+          "taskType": "FAB",
           "pu": 2,
           "taskqty": 9,
-          "completionDate": "2022-11-01T00:00:00-04:00"
+          "completionDate": "2022-11-01T00:00:00-04:00",
+          "puEffort": 18
         }
       ]
     },
@@ -2763,8 +2781,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 0,
-      "taskqty": 234,
       "completionDate": "2022-11-01T00:00:00-04:00",
       "children": [
         {
@@ -2789,9 +2805,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 50000,
+          "taskType": "FAB",
           "pu": 0.5,
           "taskqty": 234,
-          "completionDate": "2022-11-01T00:00:00-04:00"
+          "completionDate": "2022-11-01T00:00:00-04:00",
+          "puEffort": 117
         }
       ]
     },
@@ -2818,8 +2836,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 1,
-      "taskqty": 9,
       "completionDate": "2022-11-01T00:00:00-04:00",
       "children": [
         {
@@ -2844,9 +2860,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 51000,
+          "taskType": "FAB",
           "pu": 1,
           "taskqty": 9,
-          "completionDate": "2022-11-01T00:00:00-04:00"
+          "completionDate": "2022-11-01T00:00:00-04:00",
+          "puEffort": 9
         }
       ]
     },
@@ -2873,8 +2891,6 @@
       "expanded": true,
       "baselines": [],
       "parentId": null,
-      "pu": 0,
-      "taskqty": 5754,
       "completionDate": "2023-01-18T00:00:00-05:00",
       "children": [
         {
@@ -2899,9 +2915,11 @@
           "schedulingMode": "FixedEffort",
           "baselines": [],
           "parentId": 52000,
+          "taskType": "FAB",
           "pu": null,
           "taskqty": 5754,
-          "completionDate": "2023-01-18T00:00:00-05:00"
+          "completionDate": "2023-01-18T00:00:00-05:00",
+          "puEffort": null
         }
       ]
     }
@@ -2909,861 +2927,861 @@
   "resources": [
     {
       "id": 1,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-SL2000-1",
       "image": "SL2000.jpg",
       "shift": "AM"
     },
     {
       "id": 2,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-SL2000-2",
       "image": "SL2000.jpg",
       "shift": "AM"
     },
     {
       "id": 3,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-SL2000-3",
       "image": "SL2000.jpg",
       "shift": "AM"
     },
     {
       "id": 4,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-SL2000-4",
       "image": "SL2000.jpg",
       "shift": "AM"
     },
     {
       "id": 5,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-SL2000-5",
       "image": "SL2000.jpg",
       "shift": "AM"
     },
     {
       "id": 6,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-SL2000-6",
       "image": "SL2000.jpg",
       "shift": "AM"
     },
     {
       "id": 7,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-SL2000-7",
       "image": "SL2000.jpg",
       "shift": "AM"
     },
     {
       "id": 8,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-SL2000-8",
       "image": "SL2000.jpg",
       "shift": "AM"
     },
     {
       "id": 9,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-SL2000-9",
       "image": "SL2000.jpg",
       "shift": "AM"
     },
     {
       "id": 10,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-SL2000-10",
       "image": "SL2000.jpg",
       "shift": "AM"
     },
     {
       "id": 11,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-SL2000-11",
       "image": "SL2000.jpg",
       "shift": "AM"
     },
     {
       "id": 12,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-SL2000-12",
       "image": "SL2000.jpg",
       "shift": "AM"
     },
     {
       "id": 13,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-SL2000-13",
       "image": "SL2000.jpg",
       "shift": "AM"
     },
     {
       "id": 14,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-SL2000-14",
       "image": "SL2000.jpg",
       "shift": "AM"
     },
     {
       "id": 15,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-SL2000-15",
       "image": "SL2000.jpg",
       "shift": "AM"
     },
     {
       "id": 16,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-SL2000-16",
       "image": "SL2000.jpg",
       "shift": "AM"
     },
     {
       "id": 17,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-SL2000-17",
       "image": "SL2000.jpg",
       "shift": "AM"
     },
     {
       "id": 18,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-SL2000-18",
       "image": "SL2000.jpg",
       "shift": "AM"
     },
     {
       "id": 19,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-SL2000-19",
       "image": "SL2000.jpg",
       "shift": "AM"
     },
     {
       "id": 20,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-SL2000-20",
       "image": "SL2000.jpg",
       "shift": "AM"
     },
     {
       "id": 21,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-SL2000-21",
       "image": "SL2000.jpg",
       "shift": "AM"
     },
     {
       "id": 22,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-SL2000-22",
       "image": "SL2000.jpg",
       "shift": "AM"
     },
     {
       "id": 23,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-SL5000-1",
       "image": "SL5000.jpg",
       "shift": "AM"
     },
     {
       "id": 24,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-SL5000-2",
       "image": "SL5000.jpg",
       "shift": "AM"
     },
     {
       "id": 25,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-SL5000-3",
       "image": "SL5000.jpg",
       "shift": "AM"
     },
     {
       "id": 26,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-SL5000-4",
       "image": "SL5000.jpg",
       "shift": "AM"
     },
     {
       "id": 27,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-TSL210-1",
       "image": "TSL210.jpg",
       "shift": "AM"
     },
     {
       "id": 28,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-TSL210-2",
       "image": "TSL210.jpg",
       "shift": "AM"
     },
     {
       "id": 29,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-TSL210-3",
       "image": "TSL210.jpg",
       "shift": "AM"
     },
     {
       "id": 30,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-TSL210-4",
       "image": "TSL210.jpg",
       "shift": "AM"
     },
     {
       "id": 31,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-Electrical-1",
       "image": "Electrical.jpg",
       "shift": "AM"
     },
     {
       "id": 32,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-Electrical-2",
       "image": "Electrical.jpg",
       "shift": "AM"
     },
     {
       "id": 33,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-Electrical-3",
       "image": "Electrical.jpg",
       "shift": "AM"
     },
     {
       "id": 34,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-Electrical-4",
       "image": "Electrical.jpg",
       "shift": "AM"
     },
     {
       "id": 35,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-Hyundai-1",
       "image": "Hyundai.jpg",
       "shift": "AM"
     },
     {
       "id": 36,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-Hyundai-2",
       "image": "Hyundai.jpg",
       "shift": "AM"
     },
     {
       "id": 37,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-Hyundai-3",
       "image": "Hyundai.jpg",
       "shift": "AM"
     },
     {
       "id": 38,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-Hyundai-4",
       "image": "Hyundai.jpg",
       "shift": "AM"
     },
     {
       "id": 39,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-Welders-1",
       "image": "Welders.jpg",
       "shift": "AM"
     },
     {
       "id": 40,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-Welders-2",
       "image": "Welders.jpg",
       "shift": "AM"
     },
     {
       "id": 41,
-      "calendar": "am-shift",
+      "calendar": null,
       "name": "AM-Welders-3",
       "image": "Welders.jpg",
       "shift": "AM"
     },
     {
       "id": 42,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-SL2000-1",
       "image": "SL2000.jpg",
       "shift": "PM"
     },
     {
       "id": 43,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-SL2000-2",
       "image": "SL2000.jpg",
       "shift": "PM"
     },
     {
       "id": 44,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-SL2000-3",
       "image": "SL2000.jpg",
       "shift": "PM"
     },
     {
       "id": 45,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-SL2000-4",
       "image": "SL2000.jpg",
       "shift": "PM"
     },
     {
       "id": 46,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-SL2000-5",
       "image": "SL2000.jpg",
       "shift": "PM"
     },
     {
       "id": 47,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-SL2000-6",
       "image": "SL2000.jpg",
       "shift": "PM"
     },
     {
       "id": 48,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-SL2000-7",
       "image": "SL2000.jpg",
       "shift": "PM"
     },
     {
       "id": 49,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-SL2000-8",
       "image": "SL2000.jpg",
       "shift": "PM"
     },
     {
       "id": 50,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-SL2000-9",
       "image": "SL2000.jpg",
       "shift": "PM"
     },
     {
       "id": 51,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-SL2000-10",
       "image": "SL2000.jpg",
       "shift": "PM"
     },
     {
       "id": 52,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-SL2000-11",
       "image": "SL2000.jpg",
       "shift": "PM"
     },
     {
       "id": 53,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-SL2000-12",
       "image": "SL2000.jpg",
       "shift": "PM"
     },
     {
       "id": 54,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-SL2000-13",
       "image": "SL2000.jpg",
       "shift": "PM"
     },
     {
       "id": 55,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-SL2000-14",
       "image": "SL2000.jpg",
       "shift": "PM"
     },
     {
       "id": 56,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-SL2000-15",
       "image": "SL2000.jpg",
       "shift": "PM"
     },
     {
       "id": 57,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-SL2000-16",
       "image": "SL2000.jpg",
       "shift": "PM"
     },
     {
       "id": 58,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-SL2000-17",
       "image": "SL2000.jpg",
       "shift": "PM"
     },
     {
       "id": 59,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-SL2000-18",
       "image": "SL2000.jpg",
       "shift": "PM"
     },
     {
       "id": 60,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-SL2000-19",
       "image": "SL2000.jpg",
       "shift": "PM"
     },
     {
       "id": 61,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-SL2000-20",
       "image": "SL2000.jpg",
       "shift": "PM"
     },
     {
       "id": 62,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-SL2000-21",
       "image": "SL2000.jpg",
       "shift": "PM"
     },
     {
       "id": 63,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-SL2000-22",
       "image": "SL2000.jpg",
       "shift": "PM"
     },
     {
       "id": 64,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-SL5000-1",
       "image": "SL5000.jpg",
       "shift": "PM"
     },
     {
       "id": 65,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-SL5000-2",
       "image": "SL5000.jpg",
       "shift": "PM"
     },
     {
       "id": 66,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-SL5000-3",
       "image": "SL5000.jpg",
       "shift": "PM"
     },
     {
       "id": 67,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-SL5000-4",
       "image": "SL5000.jpg",
       "shift": "PM"
     },
     {
       "id": 68,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-TSL210-1",
       "image": "TSL210.jpg",
       "shift": "PM"
     },
     {
       "id": 69,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-TSL210-2",
       "image": "TSL210.jpg",
       "shift": "PM"
     },
     {
       "id": 70,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-TSL210-3",
       "image": "TSL210.jpg",
       "shift": "PM"
     },
     {
       "id": 71,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-TSL210-4",
       "image": "TSL210.jpg",
       "shift": "PM"
     },
     {
       "id": 72,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-Electrical-1",
       "image": "Electrical.jpg",
       "shift": "PM"
     },
     {
       "id": 73,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-Electrical-2",
       "image": "Electrical.jpg",
       "shift": "PM"
     },
     {
       "id": 74,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-Electrical-3",
       "image": "Electrical.jpg",
       "shift": "PM"
     },
     {
       "id": 75,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-Electrical-4",
       "image": "Electrical.jpg",
       "shift": "PM"
     },
     {
       "id": 76,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-Hyundai-1",
       "image": "Hyundai.jpg",
       "shift": "PM"
     },
     {
       "id": 77,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-Hyundai-2",
       "image": "Hyundai.jpg",
       "shift": "PM"
     },
     {
       "id": 78,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-Hyundai-3",
       "image": "Hyundai.jpg",
       "shift": "PM"
     },
     {
       "id": 79,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-Hyundai-4",
       "image": "Hyundai.jpg",
       "shift": "PM"
     },
     {
       "id": 80,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-Welders-1",
       "image": "Welders.jpg",
       "shift": "PM"
     },
     {
       "id": 81,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-Welders-2",
       "image": "Welders.jpg",
       "shift": "PM"
     },
     {
       "id": 82,
-      "calendar": "pm-shift",
+      "calendar": null,
       "name": "PM-Welders-3",
       "image": "Welders.jpg",
       "shift": "PM"
     },
     {
       "id": 83,
-      "calendar": "general",
+      "calendar": null,
       "name": "SL2000-1",
       "image": "SL2000.jpg",
       "shift": "AllDay"
     },
     {
       "id": 84,
-      "calendar": "general",
+      "calendar": null,
       "name": "SL2000-2",
       "image": "SL2000.jpg",
       "shift": "AllDay"
     },
     {
       "id": 85,
-      "calendar": "general",
+      "calendar": null,
       "name": "SL2000-3",
       "image": "SL2000.jpg",
       "shift": "AllDay"
     },
     {
       "id": 86,
-      "calendar": "general",
+      "calendar": null,
       "name": "SL2000-4",
       "image": "SL2000.jpg",
       "shift": "AllDay"
     },
     {
       "id": 87,
-      "calendar": "general",
+      "calendar": null,
       "name": "SL2000-5",
       "image": "SL2000.jpg",
       "shift": "AllDay"
     },
     {
       "id": 88,
-      "calendar": "general",
+      "calendar": null,
       "name": "SL2000-6",
       "image": "SL2000.jpg",
       "shift": "AllDay"
     },
     {
       "id": 89,
-      "calendar": "general",
+      "calendar": null,
       "name": "SL2000-7",
       "image": "SL2000.jpg",
       "shift": "AllDay"
     },
     {
       "id": 90,
-      "calendar": "general",
+      "calendar": null,
       "name": "SL2000-8",
       "image": "SL2000.jpg",
       "shift": "AllDay"
     },
     {
       "id": 91,
-      "calendar": "general",
+      "calendar": null,
       "name": "SL2000-9",
       "image": "SL2000.jpg",
       "shift": "AllDay"
     },
     {
       "id": 92,
-      "calendar": "general",
+      "calendar": null,
       "name": "SL2000-10",
       "image": "SL2000.jpg",
       "shift": "AllDay"
     },
     {
       "id": 93,
-      "calendar": "general",
+      "calendar": null,
       "name": "SL2000-11",
       "image": "SL2000.jpg",
       "shift": "AllDay"
     },
     {
       "id": 94,
-      "calendar": "general",
+      "calendar": null,
       "name": "SL2000-12",
       "image": "SL2000.jpg",
       "shift": "AllDay"
     },
     {
       "id": 95,
-      "calendar": "general",
+      "calendar": null,
       "name": "SL2000-13",
       "image": "SL2000.jpg",
       "shift": "AllDay"
     },
     {
       "id": 96,
-      "calendar": "general",
+      "calendar": null,
       "name": "SL2000-14",
       "image": "SL2000.jpg",
       "shift": "AllDay"
     },
     {
       "id": 97,
-      "calendar": "general",
+      "calendar": null,
       "name": "SL2000-15",
       "image": "SL2000.jpg",
       "shift": "AllDay"
     },
     {
       "id": 98,
-      "calendar": "general",
+      "calendar": null,
       "name": "SL2000-16",
       "image": "SL2000.jpg",
       "shift": "AllDay"
     },
     {
       "id": 99,
-      "calendar": "general",
+      "calendar": null,
       "name": "SL2000-17",
       "image": "SL2000.jpg",
       "shift": "AllDay"
     },
     {
       "id": 100,
-      "calendar": "general",
+      "calendar": null,
       "name": "SL2000-18",
       "image": "SL2000.jpg",
       "shift": "AllDay"
     },
     {
       "id": 101,
-      "calendar": "general",
+      "calendar": null,
       "name": "SL2000-19",
       "image": "SL2000.jpg",
       "shift": "AllDay"
     },
     {
       "id": 102,
-      "calendar": "general",
+      "calendar": null,
       "name": "SL2000-20",
       "image": "SL2000.jpg",
       "shift": "AllDay"
     },
     {
       "id": 103,
-      "calendar": "general",
+      "calendar": null,
       "name": "SL2000-21",
       "image": "SL2000.jpg",
       "shift": "AllDay"
     },
     {
       "id": 104,
-      "calendar": "general",
+      "calendar": null,
       "name": "SL2000-22",
       "image": "SL2000.jpg",
       "shift": "AllDay"
     },
     {
       "id": 105,
-      "calendar": "general",
+      "calendar": null,
       "name": "SL5000-1",
       "image": "SL5000.jpg",
       "shift": "AllDay"
     },
     {
       "id": 106,
-      "calendar": "general",
+      "calendar": null,
       "name": "SL5000-2",
       "image": "SL5000.jpg",
       "shift": "AllDay"
     },
     {
       "id": 107,
-      "calendar": "general",
+      "calendar": null,
       "name": "SL5000-3",
       "image": "SL5000.jpg",
       "shift": "AllDay"
     },
     {
       "id": 108,
-      "calendar": "general",
+      "calendar": null,
       "name": "SL5000-4",
       "image": "SL5000.jpg",
       "shift": "AllDay"
     },
     {
       "id": 109,
-      "calendar": "general",
+      "calendar": null,
       "name": "TSL210-1",
       "image": "TSL210.jpg",
       "shift": "AllDay"
     },
     {
       "id": 110,
-      "calendar": "general",
+      "calendar": null,
       "name": "TSL210-2",
       "image": "TSL210.jpg",
       "shift": "AllDay"
     },
     {
       "id": 111,
-      "calendar": "general",
+      "calendar": null,
       "name": "TSL210-3",
       "image": "TSL210.jpg",
       "shift": "AllDay"
     },
     {
       "id": 112,
-      "calendar": "general",
+      "calendar": null,
       "name": "TSL210-4",
       "image": "TSL210.jpg",
       "shift": "AllDay"
     },
     {
       "id": 113,
-      "calendar": "general",
+      "calendar": null,
       "name": "Electrical-1",
       "image": "Electrical.jpg",
       "shift": "AllDay"
     },
     {
       "id": 114,
-      "calendar": "general",
+      "calendar": null,
       "name": "Electrical-2",
       "image": "Electrical.jpg",
       "shift": "AllDay"
     },
     {
       "id": 115,
-      "calendar": "general",
+      "calendar": null,
       "name": "Electrical-3",
       "image": "Electrical.jpg",
       "shift": "AllDay"
     },
     {
       "id": 116,
-      "calendar": "general",
+      "calendar": null,
       "name": "Electrical-4",
       "image": "Electrical.jpg",
       "shift": "AllDay"
     },
     {
       "id": 117,
-      "calendar": "general",
+      "calendar": null,
       "name": "Hyundai-1",
       "image": "Hyundai.jpg",
       "shift": "AllDay"
     },
     {
       "id": 118,
-      "calendar": "general",
+      "calendar": null,
       "name": "Hyundai-2",
       "image": "Hyundai.jpg",
       "shift": "AllDay"
     },
     {
       "id": 119,
-      "calendar": "general",
+      "calendar": null,
       "name": "Hyundai-3",
       "image": "Hyundai.jpg",
       "shift": "AllDay"
     },
     {
       "id": 120,
-      "calendar": "general",
+      "calendar": null,
       "name": "Hyundai-4",
       "image": "Hyundai.jpg",
       "shift": "AllDay"
     },
     {
       "id": 121,
-      "calendar": "general",
+      "calendar": null,
       "name": "Welders-1",
       "image": "Welders.jpg",
       "shift": "AllDay"
     },
     {
       "id": 122,
-      "calendar": "general",
+      "calendar": null,
       "name": "Welders-2",
       "image": "Welders.jpg",
       "shift": "AllDay"
     },
     {
       "id": 123,
-      "calendar": "general",
+      "calendar": null,
       "name": "Welders-3",
       "image": "Welders.jpg",
       "shift": "AllDay"
@@ -3771,12 +3789,12 @@
   ],
   "assignments": [
     {
-      "id": "_generatedc257",
-      "event": 1100,
-      "resource": 1,
+      "id": "_generatedc252",
+      "event": 3100,
+      "resource": 7,
       "units": 100,
-      "resourceId": 1,
-      "eventId": 1100
+      "resourceId": 7,
+      "eventId": 3100
     }
   ],
   "dependencies": []
