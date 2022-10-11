@@ -4,69 +4,58 @@ const cors = require("cors");
 const app = express();
 const bodyParser = require("body-parser");
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
+const DATA_DIR_PATH = `${__dirname}/data/`;
 
 app.use(bodyParser.json());
 app.use(cors({ credentials: true, origin: "*" }));
 
-const PATH = `${__dirname}/data/`;
+app.post("/save/:projectId", (req, res) => {
+  const { projectId } = req.params;
+  const { assignmentStore, dependencyStore, eventStore, resourceStore } =
+    req.body;
 
-let reqId = 1;
+  // const tasks = cleanEvents(eventStore);
 
-app.post("/changes", (req, res) => {
-  const {
-    assignmentStore,
-    dependencyStore,
-    eventStore,
-    resourceStore,
-    project,
-  } = req.body;
+  const newData = require(`${DATA_DIR_PATH}/project-${projectId}.json`);
 
-  const projectData = require(`${PATH}/${project}`);
+  newData.assignments = assignmentStore || [];
+  newData.tasks = eventStore || [];
+  newData.resources = resourceStore || [];
+  newData.dependencies = dependencyStore || [];
 
-  projectData.assignments = projectData.assignments || { rows: [] };
-  projectData.assignments.rows = assignmentStore;
+  fs.writeFileSync(
+    `${DATA_DIR_PATH}/project-${projectId}.json`,
+    JSON.stringify(newData, null, 2)
+  );
 
-  projectData.tasks = projectData.tasks || { rows: [] };
-  projectData.tasks.rows = eventStore;
-
-  projectData.resources = projectData.resources || { rows: [] };
-  projectData.resources.rows = resourceStore;
-
-  projectData.dependencies = projectData.dependencies || { rows: [] };
-  projectData.dependencies.rows = dependencyStore;
-
-  fs.writeFileSync(`${PATH}/${project}`, JSON.stringify(projectData, null, 2));
-
-  res.json({
-    success: true,
-    requestId: reqId++,
-  });
+  res.json(newData);
 });
 
-app.post("/clear", (req, res) => {
-  const { project } = req.body;
+app.post("/clear/:projectId", (req, res) => {
+  const { projectId } = req.params;
 
-  const templateData = require(`${PATH}/template.json`);
+  console.log("NUKING", projectId);
+
+  const templateData = require(`${DATA_DIR_PATH}/template.json`);
 
   try {
     fs.writeFileSync(
-      `${PATH}/${project}`,
+      `${DATA_DIR_PATH}/project-${projectId}.json`,
       JSON.stringify(templateData, null, 2)
     );
 
-    res.json({
-      success: true,
-      requestId: reqId++,
-    });
+    res.json(templateData);
   } catch (e) {
     res.send(JSON.stringify(e));
   }
 });
 
-app.get("/", (req, res) => {
-  const data = require(`${PATH}/project-1.json`);
-  res.json(data.assignments);
+app.get("/project/:projectId", (req, res) => {
+  const { projectId } = req.params;
+  console.log(projectId);
+  const data = require(`${DATA_DIR_PATH}/project-${projectId}.json`);
+  res.json(data);
 });
 
 app.listen(port, () => {
