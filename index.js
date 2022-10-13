@@ -58,6 +58,10 @@ app.get("/project/:projectId", (req, res) => {
   res.json(JSON.parse(data));
 });
 
+app.get("/test", (req, res) => {
+  res.json({ it: "works" });
+});
+
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
