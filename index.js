@@ -10,12 +10,20 @@ const DATA_DIR_PATH = `${__dirname}/data/`;
 app.use(bodyParser.json({ limit: "50mb" }));
 app.use(cors({ credentials: true, origin: "*" }));
 
+const projectIdToFilenameMap = {
+  1: "project-1.json",
+  2: "project-2.json",
+  3: "project-3.json",
+  4: "project-4.json",
+  5: "project-5.json",
+};
+
 app.post("/save/:projectId", (req, res) => {
   const { projectId } = req.params;
   const { assignmentStore, dependencyStore, eventStore, resourceStore } =
     req.body;
 
-  const newData = require(`${DATA_DIR_PATH}/project-${projectId}.json`);
+  const newData = require(`${DATA_DIR_PATH}/${projectIdToFilenameMap[projectId]}`);
 
   newData.assignments = assignmentStore || [];
   newData.tasks = eventStore || [];
@@ -23,7 +31,7 @@ app.post("/save/:projectId", (req, res) => {
   newData.dependencies = dependencyStore || [];
 
   fs.writeFileSync(
-    `${DATA_DIR_PATH}/project-${projectId}.json`,
+    `${DATA_DIR_PATH}/${projectIdToFilenameMap[projectId]}`,
     JSON.stringify(newData, null, 2)
   );
 
@@ -37,7 +45,7 @@ app.post("/clear/:projectId", (req, res) => {
 
   try {
     fs.writeFileSync(
-      `${DATA_DIR_PATH}/project-${projectId}.json`,
+      `${DATA_DIR_PATH}/${projectIdToFilenameMap[projectId]}`,
       JSON.stringify(templateData, null, 2)
     );
 
@@ -49,7 +57,9 @@ app.post("/clear/:projectId", (req, res) => {
 
 app.get("/project/:projectId", (req, res) => {
   const { projectId } = req.params;
-  const data = fs.readFileSync(`${DATA_DIR_PATH}/project-${projectId}.json`);
+  const data = fs.readFileSync(
+    `${DATA_DIR_PATH}/${projectIdToFilenameMap[projectId]}`
+  );
   res.json(JSON.parse(data));
 });
 
