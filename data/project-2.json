@@ -3449,15 +3449,6 @@
       "shift": "AllDay"
     }
   ],
-  "assignments": [
-    {
-      "id": "_generatedc418",
-      "event": 2000,
-      "resource": 1,
-      "units": 100,
-      "resourceId": 1,
-      "eventId": 2000
-    }
-  ],
+  "assignments": [],
   "dependencies": []
 }
