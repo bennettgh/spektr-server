@@ -7,15 +7,13 @@ const bodyParser = require("body-parser");
 const port = process.env.PORT || 3001;
 const DATA_DIR_PATH = `${__dirname}/data/`;
 
-app.use(bodyParser.json());
+app.use(bodyParser.json({ limit: "50mb" }));
 app.use(cors({ credentials: true, origin: "*" }));
 
 app.post("/save/:projectId", (req, res) => {
   const { projectId } = req.params;
   const { assignmentStore, dependencyStore, eventStore, resourceStore } =
     req.body;
-
-  // const tasks = cleanEvents(eventStore);
 
   const newData = require(`${DATA_DIR_PATH}/project-${projectId}.json`);
 
@@ -35,8 +33,6 @@ app.post("/save/:projectId", (req, res) => {
 app.post("/clear/:projectId", (req, res) => {
   const { projectId } = req.params;
 
-  console.log("NUKING", projectId);
-
   const templateData = require(`${DATA_DIR_PATH}/template.json`);
 
   try {
@@ -53,7 +49,6 @@ app.post("/clear/:projectId", (req, res) => {
 
 app.get("/project/:projectId", (req, res) => {
   const { projectId } = req.params;
-  console.log(projectId);
   const data = fs.readFileSync(`${DATA_DIR_PATH}/project-${projectId}.json`);
   res.json(JSON.parse(data));
 });
