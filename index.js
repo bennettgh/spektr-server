@@ -41,15 +41,25 @@ app.post("/save/:projectId", (req, res) => {
 app.post("/clear/:projectId", (req, res) => {
   const { projectId } = req.params;
 
-  const templateData = require(`${DATA_DIR_PATH}/template.json`);
-
   try {
-    fs.writeFileSync(
-      `${DATA_DIR_PATH}/${projectIdToFilenameMap[projectId]}`,
-      JSON.stringify(templateData, null, 2)
-    );
+    if (projectId === 2 || projectId === "2") {
+      const templateData = require(`${DATA_DIR_PATH}/project-2_bu.json`);
+      fs.writeFileSync(
+        `${DATA_DIR_PATH}/${projectIdToFilenameMap[projectId]}`,
+        JSON.stringify(templateData, null, 2)
+      );
 
-    res.json(templateData);
+      return res.json(templateData);
+    } else {
+      const templateData = require(`${DATA_DIR_PATH}/template.json`);
+
+      fs.writeFileSync(
+        `${DATA_DIR_PATH}/${projectIdToFilenameMap[projectId]}`,
+        JSON.stringify(templateData, null, 2)
+      );
+
+      return res.json(templateData);
+    }
   } catch (e) {
     res.send(JSON.stringify(e));
   }
