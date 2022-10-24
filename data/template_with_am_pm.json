@@ -4085,5 +4085,6 @@
     }
   ],
   "assignments": [],
-  "dependencies": []
+  "dependencies": [],
+  "shiftCapacities": {}
 }

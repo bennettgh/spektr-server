@@ -2245,7 +2245,7 @@
       "CNCParts": 0,
       "RollPanels": 0
     }
-   ],
+  ],
   "resources": [
     {
       "id": 1,
@@ -2438,5 +2438,6 @@
     }
   ],
   "assignments": [],
-  "dependencies": []
+  "dependencies": [],
+  "shiftCapacities": {}
 }

@@ -20,8 +20,15 @@ const projectIdToFilenameMap = {
 
 app.post("/save/:projectId", (req, res) => {
   const { projectId } = req.params;
-  const { assignmentStore, dependencyStore, eventStore, resourceStore } =
-    req.body;
+  const {
+    assignmentStore,
+    dependencyStore,
+    eventStore,
+    resourceStore,
+    shiftCapacities,
+  } = req.body;
+
+  console.log("S!!", shiftCapacities);
 
   const newData = require(`${DATA_DIR_PATH}/${projectIdToFilenameMap[projectId]}`);
 
@@ -29,6 +36,7 @@ app.post("/save/:projectId", (req, res) => {
   newData.tasks = eventStore || [];
   newData.resources = resourceStore || [];
   newData.dependencies = dependencyStore || [];
+  newData.shiftCapacities = shiftCapacities || {};
 
   fs.writeFileSync(
     `${DATA_DIR_PATH}/${projectIdToFilenameMap[projectId]}`,
