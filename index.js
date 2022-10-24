@@ -26,9 +26,10 @@ app.post("/save/:projectId", (req, res) => {
     eventStore,
     resourceStore,
     shiftCapacities,
+    calendarIntervals,
   } = req.body;
 
-  console.log("S!!", shiftCapacities);
+  console.log("new intervals", calendarIntervals);
 
   const newData = require(`${DATA_DIR_PATH}/${projectIdToFilenameMap[projectId]}`);
 
@@ -37,6 +38,8 @@ app.post("/save/:projectId", (req, res) => {
   newData.resources = resourceStore || [];
   newData.dependencies = dependencyStore || [];
   newData.shiftCapacities = shiftCapacities || {};
+  newData.calendars[0].intervals =
+    calendarIntervals || newData.calendars[0].intervals;
 
   fs.writeFileSync(
     `${DATA_DIR_PATH}/${projectIdToFilenameMap[projectId]}`,

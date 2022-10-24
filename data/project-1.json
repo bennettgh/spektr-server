@@ -18,30 +18,6 @@
         }
       ],
       "expanded": true
-    },
-    {
-      "id": "am-shift",
-      "name": "AM Shift",
-      "intervals": [
-        {
-          "recurrentStartDate": "every weekday at 7:30",
-          "recurrentEndDate": "every weekday at 00:00",
-          "isWorking": false
-        }
-      ],
-      "expanded": true
-    },
-    {
-      "id": "pm-shift",
-      "name": "PM Shift",
-      "intervals": [
-        {
-          "recurrentStartDate": "every weekday at 14:30",
-          "recurrentEndDate": "every weekday at 7:30",
-          "isWorking": false
-        }
-      ],
-      "expanded": true
     }
   ],
   "tasks": [
@@ -49,16 +25,16 @@
       "id": 1000,
       "parentIndex": 0,
       "startDate": "2022-10-21T00:00:00-04:00",
-      "endDate": null,
-      "duration": null,
+      "endDate": "2022-10-21T02:15:00-04:00",
+      "duration": 0.09375,
       "durationUnit": "day",
       "cls": "",
       "name": "21-03-007 JLR, Brooklyn, JLR GRAY METALLIC IV - 24690, Ph 1.3",
       "calendar": null,
       "direction": "Forward",
       "manuallyScheduled": false,
-      "constraintType": "finishnolaterthan",
-      "constraintDate": "2022-10-21T00:00:00-04:00",
+      "constraintType": "startnoearlierthan",
+      "constraintDate": "2022-10-20T09:30:00-04:00",
       "percentDone": 0,
       "inactive": null,
       "effort": 2.25,
@@ -90,8 +66,8 @@
       "calendar": null,
       "direction": "Forward",
       "manuallyScheduled": false,
-      "constraintType": "finishnolaterthan",
-      "constraintDate": "2022-10-21T00:00:00-04:00",
+      "constraintType": null,
+      "constraintDate": null,
       "percentDone": 0,
       "inactive": null,
       "effort": 4,
@@ -148,16 +124,16 @@
       "id": 4000,
       "parentIndex": 3,
       "startDate": "2022-10-21T00:00:00-04:00",
-      "endDate": null,
-      "duration": null,
+      "endDate": "2022-10-21T01:00:00-04:00",
+      "duration": 0.041666666666666664,
       "durationUnit": "day",
       "cls": "",
       "name": "22-08-028 PCC Store Refresh - 5 Sandalwood Pkwy. W., PC WHITE COOL NEW - BN5W119B, Ph 7",
       "calendar": null,
       "direction": "Forward",
       "manuallyScheduled": false,
-      "constraintType": "finishnolaterthan",
-      "constraintDate": "2022-10-21T00:00:00-04:00",
+      "constraintType": null,
+      "constraintDate": null,
       "percentDone": 0,
       "inactive": null,
       "effort": 1,
@@ -313,7 +289,7 @@
       "id": 9000,
       "parentIndex": 8,
       "startDate": "2022-10-21T00:00:00-04:00",
-      "endDate": "2022-10-24T13:15:00-04:00",
+      "endDate": "2022-10-24T06:15:00-04:00",
       "duration": 1.15625,
       "durationUnit": "day",
       "cls": "",
@@ -3679,189 +3655,189 @@
   "resources": [
     {
       "id": 1,
-      "calendar": "general",
+      "calendar": null,
       "name": "Fabricators-1",
       "image": "F.jpg",
       "shift": "AllDay"
     },
     {
       "id": 2,
-      "calendar": "general",
+      "calendar": null,
       "name": "Fabricators-2",
       "image": "F.jpg",
       "shift": "AllDay"
     },
     {
       "id": 3,
-      "calendar": "general",
+      "calendar": null,
       "name": "Fabricators-3",
       "image": "F.jpg",
       "shift": "AllDay"
     },
     {
       "id": 4,
-      "calendar": "general",
+      "calendar": null,
       "name": "Fabricators-4",
       "image": "F.jpg",
       "shift": "AllDay"
     },
     {
       "id": 5,
-      "calendar": "general",
+      "calendar": null,
       "name": "Fabricators-5",
       "image": "F.jpg",
       "shift": "AllDay"
     },
     {
       "id": 6,
-      "calendar": "general",
+      "calendar": null,
       "name": "Fabricators-6",
       "image": "F.jpg",
       "shift": "AllDay"
     },
     {
       "id": 7,
-      "calendar": "general",
+      "calendar": null,
       "name": "Fabricators-7",
       "image": "F.jpg",
       "shift": "AllDay"
     },
     {
       "id": 8,
-      "calendar": "general",
+      "calendar": null,
       "name": "Fabricators-8",
       "image": "F.jpg",
       "shift": "AllDay"
     },
     {
       "id": 9,
-      "calendar": "general",
+      "calendar": null,
       "name": "Fabricators-9",
       "image": "F.jpg",
       "shift": "AllDay"
     },
     {
       "id": 10,
-      "calendar": "general",
+      "calendar": null,
       "name": "Fabricators-10",
       "image": "F.jpg",
       "shift": "AllDay"
     },
     {
       "id": 11,
-      "calendar": "general",
+      "calendar": null,
       "name": "Fabricators-11",
       "image": "F.jpg",
       "shift": "AllDay"
     },
     {
       "id": 12,
-      "calendar": "general",
+      "calendar": null,
       "name": "Fabricators-12",
       "image": "F.jpg",
       "shift": "AllDay"
     },
     {
       "id": 13,
-      "calendar": "general",
+      "calendar": null,
       "name": "Fabricators-13",
       "image": "F.jpg",
       "shift": "AllDay"
     },
     {
       "id": 14,
-      "calendar": "general",
+      "calendar": null,
       "name": "Fabricators-14",
       "image": "F.jpg",
       "shift": "AllDay"
     },
     {
       "id": 15,
-      "calendar": "general",
+      "calendar": null,
       "name": "Fabricators-15",
       "image": "F.jpg",
       "shift": "AllDay"
     },
     {
       "id": 16,
-      "calendar": "general",
+      "calendar": null,
       "name": "Fabricators-16",
       "image": "F.jpg",
       "shift": "AllDay"
     },
     {
       "id": 17,
-      "calendar": "general",
+      "calendar": null,
       "name": "Fabricators-17",
       "image": "F.jpg",
       "shift": "AllDay"
     },
     {
       "id": 18,
-      "calendar": "general",
+      "calendar": null,
       "name": "Fabricators-18",
       "image": "F.jpg",
       "shift": "AllDay"
     },
     {
       "id": 19,
-      "calendar": "general",
+      "calendar": null,
       "name": "Fabricators-19",
       "image": "F.jpg",
       "shift": "AllDay"
     },
     {
       "id": 20,
-      "calendar": "general",
+      "calendar": null,
       "name": "Fabricators-20",
       "image": "F.jpg",
       "shift": "AllDay"
     },
     {
       "id": 51,
-      "calendar": "general",
+      "calendar": null,
       "name": "Electrical-1",
       "image": "E.jpg",
       "shift": "AllDay"
     },
     {
       "id": 52,
-      "calendar": "general",
+      "calendar": null,
       "name": "Electrical-2",
       "image": "E.jpg",
       "shift": "AllDay"
     },
     {
       "id": 53,
-      "calendar": "general",
+      "calendar": null,
       "name": "Electrical-3",
       "image": "E.jpg",
       "shift": "AllDay"
     },
     {
       "id": 54,
-      "calendar": "general",
+      "calendar": null,
       "name": "Electrical-4",
       "image": "E.jpg",
       "shift": "AllDay"
     },
     {
       "id": 101,
-      "calendar": "general",
+      "calendar": null,
       "name": "Welders-1",
       "image": "Welders.jpg",
       "shift": "AllDay"
     },
     {
       "id": 102,
-      "calendar": "general",
+      "calendar": null,
       "name": "Welders-2",
       "image": "Welders.jpg",
       "shift": "AllDay"
     },
     {
       "id": 103,
-      "calendar": "general",
+      "calendar": null,
       "name": "Welders-3",
       "image": "Welders.jpg",
       "shift": "AllDay"
@@ -3875,18 +3851,30 @@
       "units": 100,
       "resourceId": 8,
       "eventId": 9000
+    },
+    {
+      "id": "_generatedc267",
+      "event": 1000,
+      "resource": 1,
+      "units": 100,
+      "resourceId": 1,
+      "eventId": 1000
+    },
+    {
+      "id": "_generatedc193",
+      "event": 4000,
+      "resource": 3,
+      "units": 100,
+      "resourceId": 3,
+      "eventId": 4000
     }
   ],
   "dependencies": [],
   "shiftCapacities": {
-    "2022-9-20-PM": 22,
-    "2022-9-19-AM": 12,
-    "2022-9-20-AM": "11",
-    "2022-9-19-PM": 143,
-    "2022-9-18-AM": 151,
-    "2022-9-26-PM": 1401,
-    "2022-9-18-PM": 111,
-    "2022-9-26-AM": 15,
-    "2022-9-21-AM": 1
+    "2022-9-21-AM": 15,
+    "2022-9-25-AM": 11,
+    "2022-9-20-AM": 12,
+    "2022-9-20-PM": 141,
+    "2022-9-19-AM": 153
   }
 }
