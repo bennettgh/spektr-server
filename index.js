@@ -29,8 +29,6 @@ app.post("/save/:projectId", (req, res) => {
     calendarIntervals,
   } = req.body;
 
-  console.log("new intervals", calendarIntervals);
-
   const newData = require(`${DATA_DIR_PATH}/${projectIdToFilenameMap[projectId]}`);
 
   newData.assignments = assignmentStore || [];
