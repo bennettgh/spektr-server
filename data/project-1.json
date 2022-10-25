@@ -3662,189 +3662,189 @@
       "id": 1,
       "calendar": "general",
       "name": "Fabricators-1",
-      "image": "F.jpg",
+      "image": "f1.jpg",
       "shift": "AllDay"
     },
     {
       "id": 2,
       "calendar": "general",
       "name": "Fabricators-2",
-      "image": "F.jpg",
+      "image": "f2.jpg",
       "shift": "AllDay"
     },
     {
       "id": 3,
       "calendar": "general",
       "name": "Fabricators-3",
-      "image": "F.jpg",
+      "image": "f3.jpg",
       "shift": "AllDay"
     },
     {
       "id": 4,
       "calendar": "general",
       "name": "Fabricators-4",
-      "image": "F.jpg",
+      "image": "f4.jpg",
       "shift": "AllDay"
     },
     {
       "id": 5,
       "calendar": "general",
       "name": "Fabricators-5",
-      "image": "F.jpg",
+      "image": "f5.jpg",
       "shift": "AllDay"
     },
     {
       "id": 6,
       "calendar": "general",
       "name": "Fabricators-6",
-      "image": "F.jpg",
+      "image": "f6.jpg",
       "shift": "AllDay"
     },
     {
       "id": 7,
       "calendar": "general",
       "name": "Fabricators-7",
-      "image": "F.jpg",
+      "image": "f7.jpg",
       "shift": "AllDay"
     },
     {
       "id": 8,
       "calendar": "general",
       "name": "Fabricators-8",
-      "image": "F.jpg",
+      "image": "f8.jpg",
       "shift": "AllDay"
     },
     {
       "id": 9,
       "calendar": "general",
       "name": "Fabricators-9",
-      "image": "F.jpg",
+      "image": "f9.jpg",
       "shift": "AllDay"
     },
     {
       "id": 10,
       "calendar": "general",
       "name": "Fabricators-10",
-      "image": "F.jpg",
+      "image": "f10.jpg",
       "shift": "AllDay"
     },
     {
       "id": 11,
       "calendar": "general",
       "name": "Fabricators-11",
-      "image": "F.jpg",
+      "image": "f11.jpg",
       "shift": "AllDay"
     },
     {
       "id": 12,
       "calendar": "general",
       "name": "Fabricators-12",
-      "image": "F.jpg",
+      "image": "f12.jpg",
       "shift": "AllDay"
     },
     {
       "id": 13,
       "calendar": "general",
       "name": "Fabricators-13",
-      "image": "F.jpg",
+      "image": "f13.jpg",
       "shift": "AllDay"
     },
     {
       "id": 14,
       "calendar": "general",
       "name": "Fabricators-14",
-      "image": "F.jpg",
+      "image": "f14.jpg",
       "shift": "AllDay"
     },
     {
       "id": 15,
       "calendar": "general",
       "name": "Fabricators-15",
-      "image": "F.jpg",
+      "image": "f15.jpg",
       "shift": "AllDay"
     },
     {
       "id": 16,
       "calendar": "general",
       "name": "Fabricators-16",
-      "image": "F.jpg",
+      "image": "f16.jpg",
       "shift": "AllDay"
     },
     {
       "id": 17,
       "calendar": "general",
       "name": "Fabricators-17",
-      "image": "F.jpg",
+      "image": "f17.jpg",
       "shift": "AllDay"
     },
     {
       "id": 18,
       "calendar": "general",
       "name": "Fabricators-18",
-      "image": "F.jpg",
+      "image": "f18.jpg",
       "shift": "AllDay"
     },
     {
       "id": 19,
       "calendar": "general",
       "name": "Fabricators-19",
-      "image": "F.jpg",
+      "image": "f19.jpg",
       "shift": "AllDay"
     },
     {
       "id": 20,
       "calendar": "general",
       "name": "Fabricators-20",
-      "image": "F.jpg",
+      "image": "f20.jpg",
       "shift": "AllDay"
     },
     {
       "id": 51,
       "calendar": "general",
       "name": "Electrical-1",
-      "image": "E.jpg",
+      "image": "e1.jpg",
       "shift": "AllDay"
     },
     {
       "id": 52,
       "calendar": "general",
       "name": "Electrical-2",
-      "image": "E.jpg",
+      "image": "e2.jpg",
       "shift": "AllDay"
     },
     {
       "id": 53,
       "calendar": "general",
       "name": "Electrical-3",
-      "image": "E.jpg",
+      "image": "e3.jpg",
       "shift": "AllDay"
     },
     {
       "id": 54,
       "calendar": "general",
       "name": "Electrical-4",
-      "image": "E.jpg",
+      "image": "e4.jpg",
       "shift": "AllDay"
     },
     {
       "id": 101,
       "calendar": "general",
       "name": "Welders-1",
-      "image": "Welders.jpg",
+      "image": "w1.jpg",
       "shift": "AllDay"
     },
     {
       "id": 102,
       "calendar": "general",
       "name": "Welders-2",
-      "image": "Welders.jpg",
+      "image": "w2.jpg",
       "shift": "AllDay"
     },
     {
       "id": 103,
       "calendar": "general",
       "name": "Welders-3",
-      "image": "Welders.jpg",
+      "image": "w3.jpg",
       "shift": "AllDay"
     }
   ],
